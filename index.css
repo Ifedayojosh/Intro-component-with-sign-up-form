@@ -5,7 +5,7 @@
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width:90%;
     height: 650px;
-    background: #FF7979;
+    background: url('images/img.png');
     display: table;
     margin: auto;
 }
@@ -88,10 +88,20 @@ a{
     font-weight: bold;
 }
 #message1,#message2,#message3,#message4{
-    font-size: 8px;
+    font-size: 10px;
     float: right;
     font-style: italic;
     padding-right: 40px;
+}
+#ec1 , #ec2, #ec3, #ec4{
+    display: flex;
+    position: relative;
+}
+#ec1a, #ec2a, #ec3a, #ec4a{
+    position: absolute;
+    right:50px;
+    bottom: 10px;
+    display:none;
 }
 @media screen and (max-width:480px) {
    #container{
@@ -99,6 +109,7 @@ a{
     height: 100%;
     display: block;
     margin:auto;
+    overflow: hidden;
    }
    #div1{
     width: 100%;
@@ -129,10 +140,25 @@ a{
    #span1{
     margin-left:45px;
    }
+   #ec1 , #ec2, #ec3, #ec4{
+    display: flex;
+    position: relative;
+    width: 480px;
+}
+#ec1a, #ec2a, #ec3a, #ec4a{
+    position: absolute;
+    right:170px;
+    bottom: 10px;
+    display:none;
+}
+#message1,#message2,#message3,#message4{
+    float: none;
+    margin-left: 162px;
+}
 }
 @media screen and (max-width:800px) {
     body{
-     background: #FF7979;
+     background: url('images/img.png')
     }
     #container{
      width: 100%;
@@ -168,5 +194,16 @@ a{
     }
     #span1{
      margin-left:45px;
+    }
+    #ec1 , #ec2, #ec3, #ec4{
+        display: flex;
+        position: relative;
+        width: 480px;
+    }
+    #ec1a, #ec2a, #ec3a, #ec4a{
+        position: absolute;
+        right:170px;
+        bottom: 10px;
+        display:none;
     }
  }
