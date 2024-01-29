@@ -2,62 +2,79 @@
     box-sizing: border-box;
 }
 #container{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width:90%;
-    height: 650px;
+    font-family: "Poppins", sans-serif;
+    width:1440px;
+    height: 800px;
     background: url('images/img.png');
     display: table;
     margin: auto;
 }
 #div1{
-    width: 40%;
+    width: 50%;
     display: table-cell;
     vertical-align: middle;
     text-align: justify;
     color: white;
-    padding-left: 50px;
+    padding-left: 165px;
 }
 #p1{
-    font-weight: bold;
-    font-size: 30px;
-    letter-spacing: -2px;
+    width: 525px;
+    height: 131px;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: -0.521px;
 }
 #p2{
-    font-size: 10px;
-    line-height: 15px;
+    width: 525px;
+    height: 78px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
 }
 #div2{
-    width: 60%;
+    width: 50%;
     display: table-cell;
-    padding-left: 50px;
-    padding-top: 90px;
+    padding-right: 165px;
+    padding-top: 121px;
 }
 #btn1{
-    width:420px;
-    height: 40px;
+    width:540px;
+    height: 60px;
     color: white;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.268px;
     border: none;
     border-radius: 10px;
     background: #5E54A4;
     box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
 }
 form{
-    width: 420px;
-    height: 450px;
+    width: 540px;
+    height: 474px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
-
 }
 input{
-    /* padding: auto; */
     margin-left: 50px;
     padding-left: 30px;
-    width: 330px;
-    height: 40px;
+    width: 460px;
+    height: 56px;
     border-radius: 5px;
     border: 1px solid #DEDEDE;
     background: #FFF;
+    color: #3D3B48;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0.25px;
 }
 input:hover{
     border-radius: 5px;
@@ -68,8 +85,12 @@ input:focus {
     border: none;
   }
 #btn2{
-    width: 335px;
-    height: 40px;
+    width: 460px;
+    height: 56px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
     margin-left: 50px;
     color: white;
     border: none;
@@ -77,10 +98,17 @@ input:focus {
     background: #38CC8B;
     box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.09) inset;
 }
+#btn2:hover{
+    cursor: pointer;
+}
 #span1{
-    font-size: 8px;
+    margin-left: 90px;
     color: #BAB7D4;
-    margin-left: 65px;
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
 }
 a{
     text-decoration: none;
@@ -88,10 +116,13 @@ a{
     font-weight: bold;
 }
 #message1,#message2,#message3,#message4{
-    font-size: 10px;
     float: right;
-    font-style: italic;
     padding-right: 40px;
+    color: #FF7979;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
 }
 #ec1 , #ec2, #ec3, #ec4{
     display: flex;
@@ -104,106 +135,88 @@ a{
     display:none;
 }
 @media screen and (max-width:480px) {
-   #container{
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin:auto;
-    overflow: hidden;
-   }
-   #div1{
-    width: 100%;
-    display: block;
-    padding-top: 50px;
-    justify-content: center;
-   }
-   #div2{
-    width: 100%;
-    padding-bottom: 50px;
-    padding-top: 20px;
-    display: block;
-   }
-   #btn1{
-    width: 350px;
-    height: 40px;
-}
-   form{
-    width:350px;
-   }
-   input{
-    width: 275px;
-    margin-right: 150px;
-   }
-   #btn2{
-    width:275px;
-   }
-   #span1{
-    margin-left:45px;
-   }
-   #ec1 , #ec2, #ec3, #ec4{
-    display: flex;
-    position: relative;
-    width: 480px;
-}
-#ec1a, #ec2a, #ec3a, #ec4a{
-    position: absolute;
-    right:170px;
-    bottom: 10px;
-    display:none;
-}
-#message1,#message2,#message3,#message4{
-    float: none;
-    margin-left: 162px;
-}
-}
-@media screen and (max-width:800px) {
     body{
-     background: url('images/img.png')
+        max-width: 375px;
+        height:1000px;
+        background: url('images/img.png');
+        overflow-x: hidden;
     }
     #container{
-     width: 100%;
-     height: 100%;
-     display: block;
-     margin:auto;
+        display: flex;
+        flex-direction: column;
     }
-    #div1{
-     width: 100%;
-     display: block;
-     padding-top: 50px;
-     justify-content: center;
+    #div1, #div2{
+        padding: 50px;
     }
-    #div2{
-     width: 100%;
-     padding-bottom: 50px;
-     padding-top: 20px;
-     display: block;
+    #p1{
+        width:327px;
+        height: 80px;
+        display: block;
+        text-align: center;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -0.292px;
+    }
+    #p2{
+        width: 327px;
+        height: 80px;
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
     }
     #btn1{
-     width: 350px;
-     height: 40px;
- }
+        width: 340px;
+        height: 88px;
+        border-radius: 10px;
+        background: #5E54A4;
+        box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        font-size: 15px;
+        font-style: normal;
+        line-height: 26px;
+        letter-spacing: 0.268px;
+        padding: 20px;
+    }   
     form{
-     width:350px;
+        width: 340px;
+        height: 500px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
     }
     input{
-     width: 275px;
-     margin-right: 150px;
+        width:285px;
+        height: 56px;
+        border-radius: 5px;
+        border: 1px solid #DEDEDE;
+        background: #FFF;
+        margin-left: 30px;
     }
     #btn2{
-     width:275px;
+        width: 285px;
+        height: 56px;
+        margin-left: 30px;
     }
     #span1{
-     margin-left:45px;
-    }
-    #ec1 , #ec2, #ec3, #ec4{
-        display: flex;
-        position: relative;
-        width: 480px;
+        display: block;
+        width:249px;
+        margin-left: 40px;
+        color: #BAB7D4;
+        text-align: center;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
     }
     #ec1a, #ec2a, #ec3a, #ec4a{
         position: absolute;
-        right:170px;
-        bottom: 10px;
+        right:40px;
+        bottom: 15px;
         display:none;
     }
- }
+}
