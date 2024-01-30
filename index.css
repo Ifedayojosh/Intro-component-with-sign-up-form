@@ -1,13 +1,19 @@
 *{
     box-sizing: border-box;
 }
+body{
+    height: 100%;
+    background: url('images/img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 #container{
     font-family: "Poppins", sans-serif;
-    width:1440px;
-    height: 800px;
-    background: url('images/img.png');
-    display: table;
+    width:100%;
+    height: 100%;
     margin: auto;
+    display: table;
 }
 #div1{
     width: 50%;
